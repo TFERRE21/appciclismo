@@ -1,0 +1,13 @@
+{
+  "name": "pedal-brasil",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node web.mjs",
+    "test": "node --test server.test.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

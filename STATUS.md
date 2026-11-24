@@ -1,0 +1,3 @@
+# Estado desta versão
+
+Código integrado, mas ainda sem validação de execução: cadastro/login, sessões, GPS em primeiro plano, histórico, distância, GPX, galeria de fotos com compressão, registros básicos de publicações, eventos, grupos, rotas, classificados, bicicletas, manutenção, metas, suporte e furtos. Cada módulo amplo do ROADMAP continua pendente de seus requisitos completos. SQLite substitui PostgreSQL nesta primeira versão para reduzir dependências. PWA possui cache da interface, não sincronização offline. Sem mapas cartográficos (apenas desenho do trajeto), testes físicos, APK, iOS, moderação, controles de privacidade granulares, vídeo, voz, sensores, SOS, pagamentos ou treinamento inteligente. Não usar em produção pública antes de revisão de segurança.

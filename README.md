@@ -1,11 +1,3 @@
 # Pedal Brasil
 
-Ecossistema brasileiro de ciclismo. Projeto em desenvolvimento; aplicativo ainda não disponível.
-
-Consulte [ROADMAP](ROADMAP.md) para os 55 módulos. A arquitetura prevista utiliza Expo, Next.js, Node.js, PostgreSQL/PostGIS, Redis/BullMQ, MapLibre e FFmpeg.
-
-## Primeira base executável
-Execute `docker compose up --build` e consulte `http://localhost:8080/health`. Este endpoint verifica apenas o processo HTTP; não comprova banco, GPS ou outros módulos.
-
-## Segurança
-Localização privada por padrão, consentimento revogável, sem promessas de resgate. Nenhuma integração externa é considerada ativa sem configuração e teste. Não exponha portas de banco ou segredos.
+Versão web inicial 0.1.0. Execute `docker compose up -d --build` ou use Node 24 com `npm start`. Porta 8080. Configure HTTPS no proxy do iContainer; para teste HTTP local apenas, COOKIE_SECURE=false. Banco SQLite persistente em /app/data; preserve o volume pedal_data. Não é o aplicativo nativo completo. GPS em primeiro plano, registros de pedaladas, GPX, cadastro/login e registros comunitários básicos. Sem garantia de GPS em segundo plano, SOS, Bluetooth, vídeo ou pagamentos. Não exponha publicamente antes de revisão de segurança, rate limiting e moderação. Consulte ROADMAP.md e STATUS.md.
